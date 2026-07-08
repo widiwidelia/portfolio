@@ -8,6 +8,25 @@
     body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
     h1 { color: #333; }
     .project { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px; }
+    .tech-tags { margin: 10px 0; }
+    .tech-tags span {
+      display: inline-block;
+      background: #e0e0e0;
+      color: #333;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -18,8 +37,21 @@
   <h2>Projects</h2>
 
   <div class="project">
-    <h3>Project One</h3>
-    <p>Short description of what this project does.</p>
+    <h3>Retail Sales ETL Pipeline</h3>
+    <p>
+      A Python ETL pipeline that extracts, cleans, and loads ~800K real
+      e-commerce transaction records into a SQL database, then answers
+      business questions like revenue trends, top products, and customer
+      segmentation.
+    </p>
+    <div class="tech-tags">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>pandas</span>
+      <span>SQLAlchemy</span>
+      <span>ETL</span>
+    </div>
+    <a href="https://github.com/widiwidelia/retail-etl-pipeline" target="_blank">View on GitHub →</a>
   </div>
 
   <div class="project">
@@ -28,7 +60,7 @@
   </div>
 
   <h2>Contact</h2>
-  <p>📧 your@email.com</p>
+  <p>📧 thisiswidiwidelia@gmail.com</p>
 
 </body>
 </html>
